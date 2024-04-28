@@ -11,6 +11,9 @@ app.get("/", (req, res) => {
 app.get("/app", (req, res) => {
   res.send("you are on page");
 });
+app.get("/settings", (req, res) => {
+  res.send("you are on settings page");
+});
 
 app.listen(process.env.PORT, () => {
   console.log(`Example app listening on port ${process.env.PORT}`);
